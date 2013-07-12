@@ -1,0 +1,75 @@
+﻿@model MongoDBPool.ViewModels.DisplayResultView
+
+@{
+    ViewBag.Title = "Player Results";
+}
+<input name = "name" type="hidden" value = "@ViewBag.name"/>
+
+<h2>Player Results </h2>
+@using (Html.BeginForm("Edit", "Player", FormMethod.Post, new {}))
+{
+    <p>
+ 
+  
+    </p>
+
+    <div style="float: right">
+        <table >
+    
+            <tr>
+                <th>
+                     Host Name
+                </th>
+                <th></th>
+                  
+                <th>
+                  Ball Left
+                </th>
+                <th></th>
+                <th>     
+                    Opponent  Name
+                </th>  
+                <th></th>
+                <th>
+                    Ball Left
+                </th>
+                <th></th>  
+                <th>
+                    Date
+                </th>  
+            </tr>
+            @foreach (var item2 in Model.HostResults)
+            {
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelitem2 => item2.HostName) 
+                    </td>
+                    <td></td>
+                    <td>
+                        @Html.DisplayFor(modelitem2 => item2.HosBallsLeft)
+                    </td>
+                    <td></td>   
+                    <td>
+                        @Html.DisplayFor(modelitem2 => item2.OppnetName)
+                    </td>
+                    <td></td>
+                    
+                     <td>
+                        @Html.DisplayFor(modelitem2 => item2.OppnetBallsLeft)
+                    </td>
+                    <td></td>
+                    
+                    
+                    <td>
+                        @Html.DisplayFor(modelitem => item2.Date)
+                    </td>
+                </tr>
+            }
+    
+    
+    
+        </table>
+    </div>
+}
+

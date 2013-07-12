@@ -1,0 +1,106 @@
+﻿@model MongoDBPool.ViewModels.PlayerCreateViewModel
+           
+@{
+    ViewBag.Title = "CreateResult";
+}
+
+<h2>CreateResult</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script> 
+<script type="text/javascript" src="../../Scripts/jquery-1.5.1.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#btnSubmit").click(function () {
+            var mylsit1, mylist2, opponetVal, blackBallPlayerVal, blackBall;
+            mylsit1 = $("#myList1").val();
+            mylist2 = $("#myList2").val();
+            blackBallPlayerVal = $("#BlackBallPlayer option:selected").val();
+            blackBall = $("#blackBall").val();
+            opponetVal = $("#Opponent option:selected").val();
+
+            if (blackBallPlayerVal == "Choose") {
+                alert("select the player name who sink the black ball");
+                return false;
+            }
+            if (opponetVal == "Choose") {
+                alert("Select Opponent");
+                return false;
+            }
+            if (blackBall.length == 0) {
+                alert("Black Ball is null");
+                return false;
+            }
+            if (mylsit1.length == 0 || mylist2.length == 0) {
+                alert("Balls are null");
+                return false;
+            }
+            return true;
+        });
+    });    
+  
+</script>
+
+@using (Html.BeginForm("CreateResult", "Result", FormMethod.Post, new { @id = Model.Id }))
+{
+   @Html.ValidationSummary(true)
+    <table>
+        <tr>
+            <td>
+                First Player :  
+            </td>
+            <td>             
+                <h3>@Model.FirstName @Model.LastName</h3>
+            </td>
+            
+            <td>
+                Second Player :
+            </td>
+            <td>
+                @Html.ValidationMessageFor(model => model.SelectedPLayerValue)
+                @Html.DropDownList("Opponent", Model.SelectedPLayerValue)
+            </td>
+        </tr>
+       
+        <tr>
+            <td>
+                Balls
+            </td>
+            <td>            
+                @Html.DropDownList("myList1", new SelectList(new[] { "0", "1", "2", "3", "4", "5", "6", "7" }), "Choose")        
+            </td>
+            <td>
+                Balls
+            </td>
+            <td>
+                @Html.DropDownList("myList2", new SelectList(new[] { "0", "1", "2", "3", "4", "5", "6", "7" }), "Choose")          
+            </td>          
+        </tr>
+    <tr>
+        <td>Who Sank black ball? </td>
+            <td>
+                @Html.ValidationMessageFor(model => model.BalckBallPLayerValue)
+                @Html.DropDownList("BlackBallPlayer", Model.BalckBallPLayerValue)
+            </td>
+      
+        <td>Black Ball</td>
+   
+            
+            
+               <td>
+                @Html.DropDownList("blackBall", new SelectList(new[] { "8" }), "Choose")          
+            </td> 
+          
+
+        </tr>
+    </table>
+    <p>
+        <input type="submit" id ="btnSubmit" value="Create" />
+    </p>
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index", "Player")
+    </div>
+}

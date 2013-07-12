@@ -1,0 +1,56 @@
+﻿@model IEnumerable<MongoDBPool.Models.Results>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Index","Player")
+</p>
+<table>
+    <tr>
+        <th>
+          Host Name
+        </th>
+        <th>
+          Balls Lefts
+        </th>
+        <th>
+           Opponent Name
+        </th>
+        <th>
+          Host BallsLeft
+        </th>
+        <th>
+           Date
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>     
+       <td>
+            @Html.DisplayFor(modelItem => item.HostName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OppnetBallsLeft)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OppnetName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OppnetBallsLeft)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { controller = "Result", id = item._id.ToString() }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

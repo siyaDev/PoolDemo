@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MongoDBPool.Controllers.AccountController" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAgAAAAAAAAAAAAAABAAAEAAAAAAQAIAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Controllers.HomeController" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Controllers.PlayerController">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAEACAAEQAAAAAAA=</HashCode>
+      <FileName>Controllers\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Controllers.ResultController" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAEAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ResultController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.DAL.DALplayer" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\DALplayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Domain.Match" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAIAAgAAAABAAAAQAAIAA=</HashCode>
+      <FileName>Domain\Match.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Domain.Player">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAEAAAAQAAAAAAAABAAAAAAAAAAg=</HashCode>
+      <FileName>Domain\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Domain.Results" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAABACAAABAAAAA=</HashCode>
+      <FileName>Domain\Results.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.MvcApplication" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIQAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Helper.MongoHelper" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAEAAAAAAQAAAAAAAAAAAAAAAQAAAAgAAAAA=</HashCode>
+      <FileName>Helper\MongoHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Models.ChangePasswordModel">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>obj\AccountModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Models.LogOnModel" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAAAAgAAA=</HashCode>
+      <FileName>obj\AccountModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Models.RegisterModel">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAQAAAAAAIAA=</HashCode>
+      <FileName>obj\AccountModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Services.PlayerService" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAEAAAAAAAAAEAAAAAAAEAAEACAAAQAAAAAAA=</HashCode>
+      <FileName>Services\PlayerService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.Services.ResultService" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Services\ResultService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.ViewModels.PlayerCreateViewModel" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ViewModels\PlayerCreateViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MongoDBPool.ViewModels.ResultModelView">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAABACAAABAAAAA=</HashCode>
+      <FileName>ViewModels\ResultModelView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
